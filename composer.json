@@ -1,0 +1,53 @@
+{
+    "name": "quantaquirk/sanctum",
+    "description": "QuantaQuirk Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
+    "keywords": ["quantaquirk", "sanctum", "auth"],
+    "license": "proprietary",
+    "authors": [
+        {
+            "name": "Tomáš Selič (Smisch-DEV)",
+            "email": "contact@smisch.sk"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "quantaquirk/console": "^1.0.0",
+        "quantaquirk/contracts": "^1.0.0",
+        "quantaquirk/database": "^1.0.0",
+        "quantaquirk/support": "^1.0.0"
+    },
+    "require-dev": {
+        "mockery/mockery": "^1.0",
+        "orchestra/testbench": "^7.28.2|^8.8.3",
+        "phpstan/phpstan": "^1.10",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "QuantaQuirk\\Sanctum\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "QuantaQuirk\\Sanctum\\Tests\\": "tests/",
+            "Workbench\\App\\": "workbench/app/",
+            "Workbench\\Database\\Factories\\": "workbench/database/factories/"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "3.x-dev"
+        },
+        "quantaquirk": {
+            "providers": [
+                "QuantaQuirk\\Sanctum\\SanctumServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
