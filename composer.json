@@ -1,7 +1,7 @@
 {
-    "name": "quantaquirk/sanctum",
-    "description": "QuantaQuirk Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
-    "keywords": ["quantaquirk", "sanctum", "auth"],
+    "name": "quantaforge/sanctum",
+    "description": "QuantaForge Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
+    "keywords": ["quantaforge", "sanctum", "auth"],
     "license": "proprietary",
     "authors": [
         {
@@ -12,10 +12,10 @@
     "require": {
         "php": "^8.1",
         "ext-json": "*",
-        "quantaquirk/console": "^1.0.0",
-        "quantaquirk/contracts": "^1.0.0",
-        "quantaquirk/database": "^1.0.0",
-        "quantaquirk/support": "^1.0.0"
+        "quantaforge/console": "^1.0.0",
+        "quantaforge/contracts": "^1.0.0",
+        "quantaforge/database": "^1.0.0",
+        "quantaforge/support": "^1.0.0"
     },
     "require-dev": {
         "mockery/mockery": "^1.0",
@@ -25,12 +25,12 @@
     },
     "autoload": {
         "psr-4": {
-            "QuantaQuirk\\Sanctum\\": "src/"
+            "QuantaForge\\Sanctum\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "QuantaQuirk\\Sanctum\\Tests\\": "tests/",
+            "QuantaForge\\Sanctum\\Tests\\": "tests/",
             "Workbench\\App\\": "workbench/app/",
             "Workbench\\Database\\Factories\\": "workbench/database/factories/"
         }
@@ -39,9 +39,9 @@
         "branch-alias": {
             "dev-master": "3.x-dev"
         },
-        "quantaquirk": {
+        "quantaforge": {
             "providers": [
-                "QuantaQuirk\\Sanctum\\SanctumServiceProvider"
+                "QuantaForge\\Sanctum\\SanctumServiceProvider"
             ]
         }
     },

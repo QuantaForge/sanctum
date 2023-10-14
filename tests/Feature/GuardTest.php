@@ -1,17 +1,17 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Feature;
+namespace QuantaForge\Sanctum\Tests\Feature;
 
 use DateTimeInterface;
-use QuantaQuirk\Auth\EloquentUserProvider;
-use QuantaQuirk\Contracts\Auth\Factory as AuthFactory;
-use QuantaQuirk\Foundation\Testing\RefreshDatabase;
-use QuantaQuirk\Http\Request;
-use QuantaQuirk\Support\Facades\Event;
-use QuantaQuirk\Sanctum\Events\TokenAuthenticated;
-use QuantaQuirk\Sanctum\Guard;
-use QuantaQuirk\Sanctum\PersonalAccessToken;
-use QuantaQuirk\Sanctum\Sanctum;
+use QuantaForge\Auth\EloquentUserProvider;
+use QuantaForge\Contracts\Auth\Factory as AuthFactory;
+use QuantaForge\Foundation\Testing\RefreshDatabase;
+use QuantaForge\Http\Request;
+use QuantaForge\Support\Facades\Event;
+use QuantaForge\Sanctum\Events\TokenAuthenticated;
+use QuantaForge\Sanctum\Guard;
+use QuantaForge\Sanctum\PersonalAccessToken;
+use QuantaForge\Sanctum\Sanctum;
 use Mockery;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase;

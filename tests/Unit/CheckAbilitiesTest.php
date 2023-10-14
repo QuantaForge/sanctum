@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Unit;
+namespace QuantaForge\Sanctum\Tests\Unit;
 
-use QuantaQuirk\Sanctum\Http\Middleware\CheckAbilities;
+use QuantaForge\Sanctum\Http\Middleware\CheckAbilities;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
@@ -33,7 +33,7 @@ class CheckAbilitiesTest extends TestCase
 
     public function test_exception_is_thrown_if_token_doesnt_have_ability()
     {
-        $this->expectException('QuantaQuirk\Sanctum\Exceptions\MissingAbilityException');
+        $this->expectException('QuantaForge\Sanctum\Exceptions\MissingAbilityException');
 
         $middleware = new CheckAbilities;
         $request = Mockery::mock();
@@ -48,7 +48,7 @@ class CheckAbilitiesTest extends TestCase
 
     public function test_exception_is_thrown_if_no_authenticated_user()
     {
-        $this->expectException('QuantaQuirk\Auth\AuthenticationException');
+        $this->expectException('QuantaForge\Auth\AuthenticationException');
 
         $middleware = new CheckAbilities;
         $request = Mockery::mock();
@@ -61,7 +61,7 @@ class CheckAbilitiesTest extends TestCase
 
     public function test_exception_is_thrown_if_no_token()
     {
-        $this->expectException('QuantaQuirk\Auth\AuthenticationException');
+        $this->expectException('QuantaForge\Auth\AuthenticationException');
 
         $middleware = new CheckAbilities;
         $request = Mockery::mock();

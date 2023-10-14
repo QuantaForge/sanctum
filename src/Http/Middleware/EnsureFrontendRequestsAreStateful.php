@@ -1,19 +1,19 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Http\Middleware;
+namespace QuantaForge\Sanctum\Http\Middleware;
 
-use QuantaQuirk\Routing\Pipeline;
-use QuantaQuirk\Support\Collection;
-use QuantaQuirk\Support\Str;
+use QuantaForge\Routing\Pipeline;
+use QuantaForge\Support\Collection;
+use QuantaForge\Support\Str;
 
 class EnsureFrontendRequestsAreStateful
 {
     /**
      * Handle the incoming requests.
      *
-     * @param  \QuantaQuirk\Http\Request  $request
+     * @param  \QuantaForge\Http\Request  $request
      * @param  callable  $next
-     * @return \QuantaQuirk\Http\Response
+     * @return \QuantaForge\Http\Response
      */
     public function handle($request, $next)
     {
@@ -47,11 +47,11 @@ class EnsureFrontendRequestsAreStateful
     protected function frontendMiddleware()
     {
         $middleware = array_values(array_filter(array_unique([
-            config('sanctum.middleware.encrypt_cookies', \QuantaQuirk\Cookie\Middleware\EncryptCookies::class),
-            \QuantaQuirk\Cookie\Middleware\AddQueuedCookiesToResponse::class,
-            \QuantaQuirk\Session\Middleware\StartSession::class,
+            config('sanctum.middleware.encrypt_cookies', \QuantaForge\Cookie\Middleware\EncryptCookies::class),
+            \QuantaForge\Cookie\Middleware\AddQueuedCookiesToResponse::class,
+            \QuantaForge\Session\Middleware\StartSession::class,
             config('sanctum.middleware.validate_csrf_token'),
-            config('sanctum.middleware.verify_csrf_token', \QuantaQuirk\Foundation\Http\Middleware\VerifyCsrfToken::class),
+            config('sanctum.middleware.verify_csrf_token', \QuantaForge\Foundation\Http\Middleware\VerifyCsrfToken::class),
             config('sanctum.middleware.authenticate_session'),
         ])));
 
@@ -67,7 +67,7 @@ class EnsureFrontendRequestsAreStateful
     /**
      * Determine if the given request is from the first-party application frontend.
      *
-     * @param  \QuantaQuirk\Http\Request  $request
+     * @param  \QuantaForge\Http\Request  $request
      * @return bool
      */
     public static function fromFrontend($request)

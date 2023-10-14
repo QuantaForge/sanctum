@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantaQuirk\Sanctum;
+namespace QuantaForge\Sanctum;
 
-use QuantaQuirk\Sanctum\Contracts\HasAbilities;
+use QuantaForge\Sanctum\Contracts\HasAbilities;
 
 class TransientToken implements HasAbilities
 {

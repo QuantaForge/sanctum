@@ -1,9 +1,9 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Console\Commands;
+namespace QuantaForge\Sanctum\Console\Commands;
 
-use QuantaQuirk\Console\Command;
-use QuantaQuirk\Sanctum\Sanctum;
+use QuantaForge\Console\Command;
+use QuantaForge\Sanctum\Sanctum;
 
 class PruneExpired extends Command
 {

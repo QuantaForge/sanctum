@@ -1,14 +1,14 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Feature;
+namespace QuantaForge\Sanctum\Tests\Feature;
 
-use QuantaQuirk\Support\Facades\Auth;
-use QuantaQuirk\Support\Facades\Route;
-use QuantaQuirk\Sanctum\Http\Middleware\CheckAbilities;
-use QuantaQuirk\Sanctum\Http\Middleware\CheckForAnyAbility;
-use QuantaQuirk\Sanctum\Http\Middleware\CheckForAnyScope;
-use QuantaQuirk\Sanctum\Http\Middleware\CheckScopes;
-use QuantaQuirk\Sanctum\Sanctum;
+use QuantaForge\Support\Facades\Auth;
+use QuantaForge\Support\Facades\Route;
+use QuantaForge\Sanctum\Http\Middleware\CheckAbilities;
+use QuantaForge\Sanctum\Http\Middleware\CheckForAnyAbility;
+use QuantaForge\Sanctum\Http\Middleware\CheckForAnyScope;
+use QuantaForge\Sanctum\Http\Middleware\CheckScopes;
+use QuantaForge\Sanctum\Sanctum;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase;
 use Workbench\App\Models\User;

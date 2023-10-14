@@ -1,9 +1,9 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Feature;
+namespace QuantaForge\Sanctum\Tests\Feature;
 
-use QuantaQuirk\Http\Request;
-use QuantaQuirk\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
+use QuantaForge\Http\Request;
+use QuantaForge\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase;
 

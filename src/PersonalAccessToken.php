@@ -1,9 +1,9 @@
 <?php
 
-namespace QuantaQuirk\Sanctum;
+namespace QuantaForge\Sanctum;
 
-use QuantaQuirk\Database\Eloquent\Model;
-use QuantaQuirk\Sanctum\Contracts\HasAbilities;
+use QuantaForge\Database\Eloquent\Model;
+use QuantaForge\Sanctum\Contracts\HasAbilities;
 
 class PersonalAccessToken extends Model implements HasAbilities
 {
@@ -42,7 +42,7 @@ class PersonalAccessToken extends Model implements HasAbilities
     /**
      * Get the tokenable model that the access token belongs to.
      *
-     * @return \QuantaQuirk\Database\Eloquent\Relations\MorphTo
+     * @return \QuantaForge\Database\Eloquent\Relations\MorphTo
      */
     public function tokenable()
     {

@@ -1,11 +1,11 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Controller;
+namespace QuantaForge\Sanctum\Tests\Controller;
 
-use QuantaQuirk\Foundation\Testing\RefreshDatabase;
-use QuantaQuirk\Http\Request;
-use QuantaQuirk\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
-use QuantaQuirk\Sanctum\Sanctum;
+use QuantaForge\Foundation\Testing\RefreshDatabase;
+use QuantaForge\Http\Request;
+use QuantaForge\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
+use QuantaForge\Sanctum\Sanctum;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase;
 use Workbench\App\Models\User;
@@ -23,8 +23,8 @@ class AuthenticateRequestsTest extends TestCase
             'auth.guards.sanctum.provider' => 'users',
             'auth.providers.users.model' => User::class,
             'database.default' => 'testing',
-            'sanctum.middleware.encrypt_cookies' => \QuantaQuirk\Cookie\Middleware\EncryptCookies::class,
-            'sanctum.middleware.verify_csrf_token' => \QuantaQuirk\Foundation\Http\Middleware\VerifyCsrfToken::class,
+            'sanctum.middleware.encrypt_cookies' => \QuantaForge\Cookie\Middleware\EncryptCookies::class,
+            'sanctum.middleware.verify_csrf_token' => \QuantaForge\Foundation\Http\Middleware\VerifyCsrfToken::class,
         ]);
     }
 

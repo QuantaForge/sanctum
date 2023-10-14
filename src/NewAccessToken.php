@@ -1,16 +1,16 @@
 <?php
 
-namespace QuantaQuirk\Sanctum;
+namespace QuantaForge\Sanctum;
 
-use QuantaQuirk\Contracts\Support\Arrayable;
-use QuantaQuirk\Contracts\Support\Jsonable;
+use QuantaForge\Contracts\Support\Arrayable;
+use QuantaForge\Contracts\Support\Jsonable;
 
 class NewAccessToken implements Arrayable, Jsonable
 {
     /**
      * The access token instance.
      *
-     * @var \QuantaQuirk\Sanctum\PersonalAccessToken
+     * @var \QuantaForge\Sanctum\PersonalAccessToken
      */
     public $accessToken;
 
@@ -24,7 +24,7 @@ class NewAccessToken implements Arrayable, Jsonable
     /**
      * Create a new access token result.
      *
-     * @param  \QuantaQuirk\Sanctum\PersonalAccessToken  $accessToken
+     * @param  \QuantaForge\Sanctum\PersonalAccessToken  $accessToken
      * @param  string  $plainTextToken
      * @return void
      */

@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Feature;
+namespace QuantaForge\Sanctum\Tests\Feature;
 
-use QuantaQuirk\Foundation\Testing\RefreshDatabase;
+use QuantaForge\Foundation\Testing\RefreshDatabase;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase;
 use Workbench\Database\Factories\PersonalAccessTokenFactory;

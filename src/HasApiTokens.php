@@ -1,23 +1,23 @@
 <?php
 
-namespace QuantaQuirk\Sanctum;
+namespace QuantaForge\Sanctum;
 
 use DateTimeInterface;
-use QuantaQuirk\Support\Str;
+use QuantaForge\Support\Str;
 
 trait HasApiTokens
 {
     /**
      * The access token the user is using for the current request.
      *
-     * @var \QuantaQuirk\Sanctum\Contracts\HasAbilities
+     * @var \QuantaForge\Sanctum\Contracts\HasAbilities
      */
     protected $accessToken;
 
     /**
      * Get the access tokens that belong to model.
      *
-     * @return \QuantaQuirk\Database\Eloquent\Relations\MorphMany
+     * @return \QuantaForge\Database\Eloquent\Relations\MorphMany
      */
     public function tokens()
     {
@@ -41,7 +41,7 @@ trait HasApiTokens
      * @param  string  $name
      * @param  array  $abilities
      * @param  \DateTimeInterface|null  $expiresAt
-     * @return \QuantaQuirk\Sanctum\NewAccessToken
+     * @return \QuantaForge\Sanctum\NewAccessToken
      */
     public function createToken(string $name, array $abilities = ['*'], DateTimeInterface $expiresAt = null)
     {
@@ -65,7 +65,7 @@ trait HasApiTokens
     /**
      * Get the access token currently associated with the user.
      *
-     * @return \QuantaQuirk\Sanctum\Contracts\HasAbilities
+     * @return \QuantaForge\Sanctum\Contracts\HasAbilities
      */
     public function currentAccessToken()
     {
@@ -75,7 +75,7 @@ trait HasApiTokens
     /**
      * Set the current access token for the user.
      *
-     * @param  \QuantaQuirk\Sanctum\Contracts\HasAbilities  $accessToken
+     * @param  \QuantaForge\Sanctum\Contracts\HasAbilities  $accessToken
      * @return $this
      */
     public function withAccessToken($accessToken)

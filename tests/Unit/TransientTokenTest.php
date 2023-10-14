@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Unit;
+namespace QuantaForge\Sanctum\Tests\Unit;
 
-use QuantaQuirk\Sanctum\TransientToken;
+use QuantaForge\Sanctum\TransientToken;
 use PHPUnit\Framework\TestCase;
 
 class TransientTokenTest extends TestCase

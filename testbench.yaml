@@ -1,2 +1,2 @@
 providers:
-  - QuantaQuirk\Sanctum\SanctumServiceProvider
+  - QuantaForge\Sanctum\SanctumServiceProvider

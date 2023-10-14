@@ -2,9 +2,9 @@
 
 namespace Workbench\App\Models;
 
-use QuantaQuirk\Foundation\Auth\User as Authenticatable;
-use QuantaQuirk\Sanctum\Contracts\HasApiTokens as HasApiTokensContract;
-use QuantaQuirk\Sanctum\HasApiTokens;
+use QuantaForge\Foundation\Auth\User as Authenticatable;
+use QuantaForge\Sanctum\Contracts\HasApiTokens as HasApiTokensContract;
+use QuantaForge\Sanctum\HasApiTokens;
 
 class User extends Authenticatable implements HasApiTokensContract
 {

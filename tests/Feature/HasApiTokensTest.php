@@ -1,12 +1,12 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Feature;
+namespace QuantaForge\Sanctum\Tests\Feature;
 
-use QuantaQuirk\Support\Carbon;
-use QuantaQuirk\Sanctum\Contracts\HasApiTokens as HasApiTokensContract;
-use QuantaQuirk\Sanctum\HasApiTokens;
-use QuantaQuirk\Sanctum\PersonalAccessToken;
-use QuantaQuirk\Sanctum\TransientToken;
+use QuantaForge\Support\Carbon;
+use QuantaForge\Sanctum\Contracts\HasApiTokens as HasApiTokensContract;
+use QuantaForge\Sanctum\HasApiTokens;
+use QuantaForge\Sanctum\PersonalAccessToken;
+use QuantaForge\Sanctum\TransientToken;
 use Orchestra\Testbench\Concerns\WithWorkbench;
 use Orchestra\Testbench\TestCase;
 

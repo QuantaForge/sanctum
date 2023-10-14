@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Unit;
+namespace QuantaForge\Sanctum\Tests\Unit;
 
-use QuantaQuirk\Sanctum\PersonalAccessToken;
+use QuantaForge\Sanctum\PersonalAccessToken;
 use PHPUnit\Framework\TestCase;
 
 class PersonalAccessTokenTest extends TestCase

@@ -1,13 +1,13 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Contracts;
+namespace QuantaForge\Sanctum\Contracts;
 
 interface HasApiTokens
 {
     /**
      * Get the access tokens that belong to model.
      *
-     * @return \QuantaQuirk\Database\Eloquent\Relations\MorphMany
+     * @return \QuantaForge\Database\Eloquent\Relations\MorphMany
      */
     public function tokens();
 
@@ -24,22 +24,22 @@ interface HasApiTokens
      *
      * @param  string  $name
      * @param  array  $abilities
-     * @return \QuantaQuirk\Sanctum\NewAccessToken
+     * @return \QuantaForge\Sanctum\NewAccessToken
      */
     public function createToken(string $name, array $abilities = ['*']);
 
     /**
      * Get the access token currently associated with the user.
      *
-     * @return \QuantaQuirk\Sanctum\Contracts\HasAbilities
+     * @return \QuantaForge\Sanctum\Contracts\HasAbilities
      */
     public function currentAccessToken();
 
     /**
      * Set the current access token for the user.
      *
-     * @param  \QuantaQuirk\Sanctum\Contracts\HasAbilities  $accessToken
-     * @return \QuantaQuirk\Sanctum\Contracts\HasApiTokens
+     * @param  \QuantaForge\Sanctum\Contracts\HasAbilities  $accessToken
+     * @return \QuantaForge\Sanctum\Contracts\HasApiTokens
      */
     public function withAccessToken($accessToken);
 }

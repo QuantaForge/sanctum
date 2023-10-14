@@ -1,30 +1,30 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Http\Middleware;
+namespace QuantaForge\Sanctum\Http\Middleware;
 
-use QuantaQuirk\Sanctum\Exceptions\MissingScopeException;
+use QuantaForge\Sanctum\Exceptions\MissingScopeException;
 
 /**
  * @deprecated
- * @see \QuantaQuirk\Sanctum\Http\Middleware\CheckAbilities
+ * @see \QuantaForge\Sanctum\Http\Middleware\CheckAbilities
  */
 class CheckScopes
 {
     /**
      * Handle the incoming request.
      *
-     * @param  \QuantaQuirk\Http\Request  $request
+     * @param  \QuantaForge\Http\Request  $request
      * @param  \Closure  $next
      * @param  mixed  ...$scopes
-     * @return \QuantaQuirk\Http\Response
+     * @return \QuantaForge\Http\Response
      *
-     * @throws \QuantaQuirk\Auth\AuthenticationException|\QuantaQuirk\Sanctum\Exceptions\MissingScopeException
+     * @throws \QuantaForge\Auth\AuthenticationException|\QuantaForge\Sanctum\Exceptions\MissingScopeException
      */
     public function handle($request, $next, ...$scopes)
     {
         try {
             return (new CheckAbilities())->handle($request, $next, ...$scopes);
-        } catch (\QuantaQuirk\Sanctum\Exceptions\MissingAbilityException $e) {
+        } catch (\QuantaForge\Sanctum\Exceptions\MissingAbilityException $e) {
             throw new MissingScopeException($e->abilities());
         }
     }

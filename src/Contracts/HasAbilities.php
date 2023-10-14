@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Contracts;
+namespace QuantaForge\Sanctum\Contracts;
 
 interface HasAbilities
 {

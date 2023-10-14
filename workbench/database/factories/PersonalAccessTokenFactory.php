@@ -2,21 +2,21 @@
 
 namespace Workbench\Database\Factories;
 
-use QuantaQuirk\Database\Eloquent\Factories\Factory;
-use QuantaQuirk\Support\Carbon;
-use QuantaQuirk\Sanctum\PersonalAccessToken;
+use QuantaForge\Database\Eloquent\Factories\Factory;
+use QuantaForge\Support\Carbon;
+use QuantaForge\Sanctum\PersonalAccessToken;
 
 /**
- * @phpstan-type TModel \QuantaQuirk\Sanctum\PersonalAccessToken
+ * @phpstan-type TModel \QuantaForge\Sanctum\PersonalAccessToken
  *
- * @extends \QuantaQuirk\Database\Eloquent\Factories\Factory<TModel>
+ * @extends \QuantaForge\Database\Eloquent\Factories\Factory<TModel>
  */
 class PersonalAccessTokenFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
-     * @var class-string<\QuantaQuirk\Database\Eloquent\Model|TModel>
+     * @var class-string<\QuantaForge\Database\Eloquent\Model|TModel>
      */
     protected $model = PersonalAccessToken::class;
 

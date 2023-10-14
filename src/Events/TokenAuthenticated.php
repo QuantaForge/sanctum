@@ -1,20 +1,20 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Events;
+namespace QuantaForge\Sanctum\Events;
 
 class TokenAuthenticated
 {
     /**
      * The personal access token that was authenticated.
      *
-     * @var \QuantaQuirk\Sanctum\PersonalAccessToken
+     * @var \QuantaForge\Sanctum\PersonalAccessToken
      */
     public $token;
 
     /**
      * Create a new event instance.
      *
-     * @param  \QuantaQuirk\Sanctum\PersonalAccessToken  $token
+     * @param  \QuantaForge\Sanctum\PersonalAccessToken  $token
      * @return void
      */
     public function __construct($token)

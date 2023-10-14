@@ -1,6 +1,6 @@
 <?php
 
-namespace QuantaQuirk\Sanctum;
+namespace QuantaForge\Sanctum;
 
 use Mockery;
 
@@ -11,7 +11,7 @@ class Sanctum
      *
      * @var string
      */
-    public static $personalAccessTokenModel = 'QuantaQuirk\\Sanctum\\PersonalAccessToken';
+    public static $personalAccessTokenModel = 'QuantaForge\\Sanctum\\PersonalAccessToken';
 
     /**
      * A callback that can get the token from the request.
@@ -49,10 +49,10 @@ class Sanctum
     /**
      * Set the current user for the application with the given abilities.
      *
-     * @param  \QuantaQuirk\Contracts\Auth\Authenticatable|\QuantaQuirk\Sanctum\HasApiTokens  $user
+     * @param  \QuantaForge\Contracts\Auth\Authenticatable|\QuantaForge\Sanctum\HasApiTokens  $user
      * @param  array  $abilities
      * @param  string  $guard
-     * @return \QuantaQuirk\Contracts\Auth\Authenticatable
+     * @return \QuantaForge\Contracts\Auth\Authenticatable
      */
     public static function actingAs($user, $abilities = [], $guard = 'sanctum')
     {

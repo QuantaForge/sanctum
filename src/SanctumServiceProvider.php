@@ -1,15 +1,15 @@
 <?php
 
-namespace QuantaQuirk\Sanctum;
+namespace QuantaForge\Sanctum;
 
-use QuantaQuirk\Auth\RequestGuard;
-use QuantaQuirk\Contracts\Http\Kernel;
-use QuantaQuirk\Support\Facades\Auth;
-use QuantaQuirk\Support\Facades\Route;
-use QuantaQuirk\Support\ServiceProvider;
-use QuantaQuirk\Sanctum\Console\Commands\PruneExpired;
-use QuantaQuirk\Sanctum\Http\Controllers\CsrfCookieController;
-use QuantaQuirk\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
+use QuantaForge\Auth\RequestGuard;
+use QuantaForge\Contracts\Http\Kernel;
+use QuantaForge\Support\Facades\Auth;
+use QuantaForge\Support\Facades\Route;
+use QuantaForge\Support\ServiceProvider;
+use QuantaForge\Sanctum\Console\Commands\PruneExpired;
+use QuantaForge\Sanctum\Http\Controllers\CsrfCookieController;
+use QuantaForge\Sanctum\Http\Middleware\EnsureFrontendRequestsAreStateful;
 
 class SanctumServiceProvider extends ServiceProvider
 {
@@ -110,7 +110,7 @@ class SanctumServiceProvider extends ServiceProvider
     /**
      * Register the guard.
      *
-     * @param  \QuantaQuirk\Contracts\Auth\Factory  $auth
+     * @param  \QuantaForge\Contracts\Auth\Factory  $auth
      * @param  array  $config
      * @return RequestGuard
      */

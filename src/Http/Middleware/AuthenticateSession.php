@@ -1,14 +1,14 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Http\Middleware;
+namespace QuantaForge\Sanctum\Http\Middleware;
 
 use Closure;
-use QuantaQuirk\Auth\AuthenticationException;
-use QuantaQuirk\Auth\SessionGuard;
-use QuantaQuirk\Contracts\Auth\Factory as AuthFactory;
-use QuantaQuirk\Http\Request;
-use QuantaQuirk\Support\Arr;
-use QuantaQuirk\Support\Collection;
+use QuantaForge\Auth\AuthenticationException;
+use QuantaForge\Auth\SessionGuard;
+use QuantaForge\Contracts\Auth\Factory as AuthFactory;
+use QuantaForge\Http\Request;
+use QuantaForge\Support\Arr;
+use QuantaForge\Support\Collection;
 use Symfony\Component\HttpFoundation\Response;
 
 class AuthenticateSession
@@ -16,14 +16,14 @@ class AuthenticateSession
     /**
      * The authentication factory implementation.
      *
-     * @var \QuantaQuirk\Contracts\Auth\Factory
+     * @var \QuantaForge\Contracts\Auth\Factory
      */
     protected $auth;
 
     /**
      * Create a new middleware instance.
      *
-     * @param  \QuantaQuirk\Contracts\Auth\Factory  $auth
+     * @param  \QuantaForge\Contracts\Auth\Factory  $auth
      * @return void
      */
     public function __construct(AuthFactory $auth)
@@ -34,9 +34,9 @@ class AuthenticateSession
     /**
      * Handle an incoming request.
      *
-     * @param  \Closure(\QuantaQuirk\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
+     * @param  \Closure(\QuantaForge\Http\Request): (\Symfony\Component\HttpFoundation\Response)  $next
      *
-     * @throws \QuantaQuirk\Auth\AuthenticationException
+     * @throws \QuantaForge\Auth\AuthenticationException
      */
     public function handle(Request $request, Closure $next): Response
     {
@@ -73,7 +73,7 @@ class AuthenticateSession
     /**
      * Store the user's current password hash in the session.
      *
-     * @param  \QuantaQuirk\Http\Request  $request
+     * @param  \QuantaForge\Http\Request  $request
      * @param  string  $guard
      * @return void
      */

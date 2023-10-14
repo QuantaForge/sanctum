@@ -1,8 +1,8 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Tests\Unit;
+namespace QuantaForge\Sanctum\Tests\Unit;
 
-use QuantaQuirk\Sanctum\Http\Middleware\CheckScopes;
+use QuantaForge\Sanctum\Http\Middleware\CheckScopes;
 use Mockery;
 use PHPUnit\Framework\TestCase;
 
@@ -33,7 +33,7 @@ class CheckScopesTest extends TestCase
 
     public function test_exception_is_thrown_if_token_doesnt_have_scope()
     {
-        $this->expectException('QuantaQuirk\Sanctum\Exceptions\MissingScopeException');
+        $this->expectException('QuantaForge\Sanctum\Exceptions\MissingScopeException');
 
         $middleware = new CheckScopes;
         $request = Mockery::mock();
@@ -48,7 +48,7 @@ class CheckScopesTest extends TestCase
 
     public function test_exception_is_thrown_if_no_authenticated_user()
     {
-        $this->expectException('QuantaQuirk\Auth\AuthenticationException');
+        $this->expectException('QuantaForge\Auth\AuthenticationException');
 
         $middleware = new CheckScopes;
         $request = Mockery::mock();
@@ -61,7 +61,7 @@ class CheckScopesTest extends TestCase
 
     public function test_exception_is_thrown_if_no_token()
     {
-        $this->expectException('QuantaQuirk\Auth\AuthenticationException');
+        $this->expectException('QuantaForge\Auth\AuthenticationException');
 
         $middleware = new CheckScopes;
         $request = Mockery::mock();

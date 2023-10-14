@@ -1,9 +1,9 @@
 <?php
 
-namespace QuantaQuirk\Sanctum\Exceptions;
+namespace QuantaForge\Sanctum\Exceptions;
 
-use QuantaQuirk\Auth\Access\AuthorizationException;
-use QuantaQuirk\Support\Arr;
+use QuantaForge\Auth\Access\AuthorizationException;
+use QuantaForge\Support\Arr;
 
 class MissingAbilityException extends AuthorizationException
 {
